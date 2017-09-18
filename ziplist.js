@@ -2,10 +2,10 @@ function zipList(list1, list2) {
   const ret = [];
   while (list1.length > 0 || list2.length > 0) {
     if (list1.length > 0) {
-      ret.push(list1.pop);
+      ret.push(list1.shift());
     }
     if (list2.length > 0) {
-      ret.push(list2.pop);
+      ret.push(list2.shift());
     }
   }
   return ret;
